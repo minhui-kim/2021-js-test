@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST2</title>
+</head>
+<body>
+    <h1>Conditional Statements</h1>
+    <input id="night_day" type="button" value="Night" onclick="
+    if(document.querySelector('#night_day').value === 'Night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#night_day').value='Day';
+    } else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value='Night';
+    }
+    ">
+    <h2>Code Example</h2>
+    <script>
+        document.write('1<br>');
+        document.write('2<br>');
+        document.write('3<br>');
+        document.write('4<br>');
+    </script>
+
+    <h2>True</h2>
+    <script>
+        document.write('1<br>');
+        if(true) {
+            document.write('2<br>');
+        } else {
+            document.write('3<br>');
+        }
+        document.write('4<br>');   
+    </script>
+
+    <h2>False</h2>
+    <script>
+        document.write('1<br>');
+        if(false) {
+            document.write('2<br>');
+        } else {
+            document.write('3<br>');
+        }
+        document.write('4<br');
+    </script>
+
+</body>
+</html>
