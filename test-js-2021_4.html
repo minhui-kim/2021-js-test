@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="#">html</a></h1>
+
+    <input id="night_day" type="button" value="Night" onclick="
+        var target = document.querySelector('body');
+        if (this.value==='Night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'Day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while ( i < alist.length) {
+                alist[i].style.color = 'yellow';
+                i = i + 1;
+            }
+
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'Night';
+        }
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while ( i < alist.length) {
+                alist[i].style.color = 'black';
+                i = i + 1;
+            }
+    ">
+
+    <ol>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JAVASCRIPT</a></li>
+    </ol>
+
+    <p>
+        HTML, CSS, JAVASCRIPT
+    </p>
+    <span>
+        Hypertext Markup Language<br>
+        Cascading Style Sheets<br>
+        Java Script
+    </span>
+    
+</body>
+</html>
