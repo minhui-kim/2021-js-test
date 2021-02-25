@@ -20,5 +20,45 @@
     document.write('<li>4</li>'); 
     </script>
     </ul>
+    <h2>Loop&Array_반복과 배열 활용</h2>
+    <script>
+        var yeah = ['one', 'two', 'three', 'four'];
+    </script>
+    <ul>
+        <script>
+            var i = 0;
+            while(i < 4){
+                document.write('<li>'+yeah[i]+'</li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+
+    <h2>Loop&Array_반복과 배열_element의 변화</h2>
+    <script>
+        var lulu = ['a', 'b', 'c', 'e'];
+    </script>
+    <script>
+        var i = 0;
+        while(i < lulu.length) {
+            document.write('<li>'+lulu[i]+'</li>');
+            i = i + 1;
+        }
+    </script>
+
+    <h2>Loop&Array_반복과 배열_링크 추가</h2>
+    <ul>
+        <script>
+            var lolo = ['ㄱ', 'ㄴ', 'ㄷ'];
+        </script>
+        <script>
+            var i = 0;
+            while(i < lolo.length) {
+                document.write('<li><a href="http//a.com/'+lolo[i]+'">'+lolo[i]+'</a></li>');
+                i = i +1;
+            } 
+        </script>
+    </ul>
+
 </body>
 </html>
