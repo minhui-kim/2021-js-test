@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>html</h1>
+    <input id="night-day-btn" type="button" value="Night-btn" onclick="
+    if(document.querySelector('#night-day-btn').value==='Night-btn') {
+        document.querySelector('body').style.backgroundColor='navy';
+        document.querySelector('body').style.color='yellowgreen';
+        document.querySelector('#night-day-btn').value='Day-btn';
+
+        var aSelect = document.querySelectorAll('a');
+        var i = 0;
+            while(i < aSelect.length) {
+            aSelect[i].style.color='powderblue';
+            i = i + 1;
+        }
+
+    } else {
+        document.querySelector('body').style.backgroundColor='yellowgreen';
+        document.querySelector('body').style.color='navy';
+        document.querySelector('#night-day-btn').value='Night-btn';
+    
+        var aSelect = document.querySelectorAll('a');
+        var i = 0;
+            while (i < aSelect.length) {
+                aSelect[i].style.color='gray';
+                i = i + 1;
+            }
+    
+    }
+    ">
+
+    <ol>
+        <li><a href="#">html</a></li>
+        <li><a href="#">css</a></li>
+        <li><a href="#">javaScript</a></li>
+    </ol>
+
+    <p>
+        Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+    </p>
+</body>
+</html>
