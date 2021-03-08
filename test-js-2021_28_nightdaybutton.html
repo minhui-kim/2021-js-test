@@ -9,10 +9,11 @@
 <body>
     <h1>html</h1>
     <input id="night-day-btn" type="button" value="Night-btn" onclick="
-    if(document.querySelector('#night-day-btn').value==='Night-btn') {
-        document.querySelector('body').style.backgroundColor='navy';
-        document.querySelector('body').style.color='yellowgreen';
-        document.querySelector('#night-day-btn').value='Day-btn';
+    var target = document.querySelector('body');
+    if(this.value==='Night-btn') {
+        target.style.backgroundColor='navy';
+        target.style.color='yellowgreen';
+        this.value='Day-btn';
 
         var aSelect = document.querySelectorAll('a');
         var i = 0;
@@ -22,14 +23,14 @@
         }
 
     } else {
-        document.querySelector('body').style.backgroundColor='yellowgreen';
-        document.querySelector('body').style.color='navy';
-        document.querySelector('#night-day-btn').value='Night-btn';
+        target.style.backgroundColor='yellowgreen';
+        target.style.color='navy';
+        this.value='Night-btn';
     
         var aSelect = document.querySelectorAll('a');
         var i = 0;
             while (i < aSelect.length) {
-                aSelect[i].style.color='gray';
+                aSelect[i].style.color='white';
                 i = i + 1;
             }
     
