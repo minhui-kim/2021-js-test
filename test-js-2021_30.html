@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Object</h1>
+    <h1>Object_객체</h1>
+    <p>
     <script>
         var coworkers = {
             "programmer" : "egoing",
@@ -22,5 +23,70 @@
         coworkers["data scientist"] = "four";
         document.write ("data scientist :" +coworkers["data scientist"]+"<br>");
     </script>
+    </p>
+    <p>
+    <script>
+        var numbers = {
+            "numberone":"one",
+            "numbertwo":"two"
+        };
+        document.write("numbers : "+numbers.numberone+"<br>");
+        document.write("numbers : "+numbers.numbertwo+"<br>");
+        numbers.numberthree = "three";
+        document.write("numbers : "+numbers.numberthree+"<br>");
+        numbers.numberfour = "four";
+        document.write("numbers : "+numbers.numberfour+"<br>");
+    </script>
+    </p>
+    <p>
+        <script>
+        var people = {
+            "family" : "seonhui",
+            "friends" : "dana",
+            "coworkers" : "jang"
+        }
+        document.write(people.family+"<br>");
+        document.write(people.friends+"<br>");
+        document.write(people.coworkers+"<br>");
+        people.known = "hwang";
+        document.write(people.known+"<br>");
+        people["un known"] = "lee";
+        document.write(people["un known"]+"<br>");
+    </script>
+    </p>
+
+    <h3>객체 반복문</h3>
+    
+    <p>
+    <script>
+        for (var key in people) {
+            document.write(key+'<br>');
+        }
+    </script>
+    <br>
+    <script>
+        for (var key in people) {
+            document.write(people[key]+'<br>');
+        }
+    </script>
+    <br>
+    <script>
+        for (var key in people) {
+            document.write(key + ':' + people[key] + '<br>');
+        }
+    </script>
+    </p>
+
+    <h3>객체프로퍼티와 메소드</h3>
+    <p>
+        <script>
+            people.showAll = function(){
+                for (var key in people) {
+                document.write(key + ':' + people[key] + '<br>');
+                }
+            }
+            people.showAll();
+        </script>
+    </p>
 </body>
 </html>

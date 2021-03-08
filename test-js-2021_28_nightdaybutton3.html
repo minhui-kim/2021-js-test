@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function setColor(color) {
+        function Links.setColor(color) {
             var aSelect = document.querySelectorAll('a');
             var i = 0;
             while(i < aSelect.length) {
@@ -19,30 +19,30 @@
             var target = document.querySelector('body');
         }
 
-        function SetColor(color) {
+        function Body.SetColor(color) {
             document.querySelector('body').style.color = color;
         }
         
-        function SetBackgroundColor(color) {
+        function Body.SetBackgroundColor(color) {
             document.querySelector('body').style.backgroundColor = color;
         }
 
     if(btn.value==='Night-btn') {
-        SetBackgroundColor('navy');
-        SetColor('yellowgreen');
+        Body.SetBackgroundColor('navy');
+        Body.SetColor('yellowgreen');
         btn.value='Day-btn';
 
-        setColor('powderblue');
+        Links.setColor('powderblue');
 
     } else {
-        SetBackgroundColor('yellowgreen');
-        SetColor('navy');
+        Body.SetBackgroundColor('yellowgreen');
+        Body.SetColor('navy');
         btn.value='Night-btn';
     
-        setColor('white');
+        Links.setColor('white');
     
         }        
-    
+    }
     </script>
 </head>
 <body>
